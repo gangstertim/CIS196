@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  issue_url: MyString
+  issue_title: MyString
+  amount: 9.99
+
+two:
+  issue_url: MyString
+  issue_title: MyString
+  amount: 9.99

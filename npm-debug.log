@@ -1,0 +1,58 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'yo', 'mamma' ]
+2 info using npm@1.1.59
+3 info using node@v0.8.8
+4 verbose read json /Users/timothymiller/hyperapp/package.json
+5 verbose read json /Users/timothymiller/hyperapp/package.json
+6 verbose cache add [ 'yo', null ]
+7 silly cache add name=undefined spec="yo" args=["yo",null]
+8 verbose parsed url { pathname: 'yo', path: 'yo', href: 'yo' }
+9 verbose cache add [ 'mamma', null ]
+10 silly cache add name=undefined spec="mamma" args=["mamma",null]
+11 verbose parsed url { pathname: 'mamma', path: 'mamma', href: 'mamma' }
+12 silly lockFile c41975d1-yo yo
+13 verbose lock yo /Users/timothymiller/.npm/c41975d1-yo.lock
+14 silly lockFile 916c0140-mamma mamma
+15 verbose lock mamma /Users/timothymiller/.npm/916c0140-mamma.lock
+16 silly lockFile c41975d1-yo yo
+17 silly lockFile 916c0140-mamma mamma
+18 verbose addNamed [ 'yo', '' ]
+19 verbose addNamed [ null, '' ]
+20 silly lockFile d937c28e-yo yo@
+21 verbose lock yo@ /Users/timothymiller/.npm/d937c28e-yo.lock
+22 verbose addNamed [ 'mamma', '' ]
+23 verbose addNamed [ null, '' ]
+24 silly lockFile 4186bab8-mamma mamma@
+25 verbose lock mamma@ /Users/timothymiller/.npm/4186bab8-mamma.lock
+26 silly addNameRange { name: 'yo', range: '', hasData: false }
+27 silly addNameRange { name: 'mamma', range: '', hasData: false }
+28 verbose url raw yo
+29 verbose url resolving [ 'https://registry.npmjs.org/', './yo' ]
+30 verbose url resolved https://registry.npmjs.org/yo
+31 info retry registry request attempt 1 at 20:37:37
+32 http GET https://registry.npmjs.org/yo
+33 verbose url raw mamma
+34 verbose url resolving [ 'https://registry.npmjs.org/', './mamma' ]
+35 verbose url resolved https://registry.npmjs.org/mamma
+36 info retry registry request attempt 1 at 20:37:37
+37 http GET https://registry.npmjs.org/mamma
+38 http 404 https://registry.npmjs.org/yo
+39 silly registry.get cb [ 404,
+39 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+39 silly registry.get     date: 'Tue, 11 Sep 2012 00:37:38 GMT',
+39 silly registry.get     'content-type': 'application/json',
+39 silly registry.get     'content-length': '52',
+39 silly registry.get     'cache-control': 'must-revalidate' } ]
+40 silly lockFile d937c28e-yo yo@
+41 error 404 'yo' is not in the npm registry.
+41 error 404 You should bug the author to publish it
+41 error 404
+41 error 404 Note that you can also install from a
+41 error 404 tarball, folder, or http url, or git url.
+42 error System Darwin 11.3.0
+43 error command "node" "/usr/local/bin/npm" "install" "yo" "mamma"
+44 error cwd /Users/timothymiller/hyperapp
+45 error node -v v0.8.8
+46 error npm -v 1.1.59
+47 error code E404
+48 verbose exit [ 1, true ]

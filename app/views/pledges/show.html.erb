@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Issue url:</b>
+  <%= @pledge.issue_url %>
+</p>
+
+<p>
+  <b>Issue title:</b>
+  <%= @pledge.issue_title %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @pledge.amount %>
+</p>
+
+
+<%= link_to 'Edit', edit_pledge_path(@pledge) %> |
+<%= link_to 'Back', pledges_path %>

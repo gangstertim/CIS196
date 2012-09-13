@@ -1,0 +1,29 @@
+<%= form_for(@pledge) do |f| %>
+  <% if @pledge.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pledge.errors.count, "error") %> prohibited this pledge from being saved:</h2>
+
+      <ul>
+      <% @pledge.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :issue_url %><br />
+    <%= f.text_field :issue_url %>
+  </div>
+  <div class="field">
+    <%= f.label :issue_title %><br />
+    <%= f.text_field :issue_title %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
