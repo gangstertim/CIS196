@@ -5,7 +5,6 @@ class PledgesController < ApplicationController
     @pledges = Pledge.all
 
     respond_to do |format|
-      format.html # index.html.erb
       format.json { render json: @pledges }
     end
   end
