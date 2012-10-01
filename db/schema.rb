@@ -32,14 +32,6 @@ ActiveRecord::Schema.define(:version => 20121001040501) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "pledges", :force => true do |t|
-    t.string   "issue_url"
-    t.string   "issue_title"
-    t.decimal  "amount"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
   create_table "users", :force => true do |t|
     t.string   "FirstName"
     t.string   "LastName"

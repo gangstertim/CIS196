@@ -1,7 +1,9 @@
 Hyperapp::Application.routes.draw do
   get "home/index"
 
-  resources :pledges
+  resources :users
+  resources :events
+  resources :guests
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
