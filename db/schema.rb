@@ -11,7 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120912174722) do
+ActiveRecord::Schema.define(:version => 20121001040501) do
+
+  create_table "events", :force => true do |t|
+    t.string   "Name"
+    t.integer  "PeopleAttending"
+    t.text     "Description"
+    t.date     "Date"
+    t.time     "Time"
+    t.boolean  "Public"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "guests", :force => true do |t|
+    t.string   "Name"
+    t.integer  "Guests"
+    t.string   "Dish"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "pledges", :force => true do |t|
     t.string   "issue_url"
@@ -19,6 +38,14 @@ ActiveRecord::Schema.define(:version => 20120912174722) do
     t.decimal  "amount"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "FirstName"
+    t.string   "LastName"
+    t.integer  "Age"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
